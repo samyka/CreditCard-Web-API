@@ -10,7 +10,7 @@ export class CardDetailService {
 
   constructor (private http: HttpClient){};
 
-  readonly apiUrl = `${environment.baseURL}/api/v1/CardDetailController`
+  apiUrl = `${environment.backendURL}/api/v1/CardDetail`
 
   cardData: CardDetail = new CardDetail();
 

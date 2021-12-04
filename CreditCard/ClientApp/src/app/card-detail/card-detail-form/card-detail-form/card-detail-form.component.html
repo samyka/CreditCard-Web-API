@@ -2,9 +2,9 @@
   <input type="hidden" name="paymentId" [value]="service.cardData.paymentId" />
   <div class="form-group">
       <label>NAME ON CARD</label>
-      <input class="form-control form-control-lg" placeholder="Full Name" name="NameOnCard"
-          #NameOnCard="ngModel" [(ngModel)]="service.cardData.NameOnCard"
-          required [class.invalid]="NameOnCard.invalid && NameOnCard.touched">
+      <input class="form-control form-control-lg" placeholder="Full Name" name="nameOnCard"
+          #nameOnCard="ngModel" [(ngModel)]="service.cardData.nameOnCard"
+          required [class.invalid]="nameOnCard.invalid && nameOnCard.touched">
   </div>
   <div class="form-group">
       <label>CARD NUMBER</label>
@@ -27,6 +27,6 @@
       </div>
   </div>
   <div class="form-group">
-      <button class="btn btn-info btn-lg btn-block" type="submit" [disabled]="form.invalid">SUBMIT</button>
+      <button class="btn btn-success btn-lg btn-block" type="submit" [disabled]="form.invalid">SUBMIT</button>
   </div>
 </form>

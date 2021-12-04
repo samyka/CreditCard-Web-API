@@ -58,7 +58,7 @@ namespace CreditCard.Backend.Controllers
         }
 
         // PUT: api/CardDetailController/Edit
-        [HttpPost("{id}")]
+        [HttpPut("{id}")]
         //[ValidateAntiForgeryToken]
         public async Task<IActionResult> UpdateCardDetail(string id, CardDetail cardDetail) 
         {

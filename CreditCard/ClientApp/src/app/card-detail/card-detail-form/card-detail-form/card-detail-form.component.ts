@@ -27,7 +27,7 @@ export class CardDetailFormComponent implements OnInit{
 
   insertRecord(form: NgForm) {
     this.service.postCardDetail().subscribe(
-      res => {
+      () => {
         this.resetForm(form);
         this.service.refreshCardDetails();
         this.toastr.success('Submitted successfully', 'Card Detail Register')
@@ -38,7 +38,7 @@ export class CardDetailFormComponent implements OnInit{
 
   updateRecord(form: NgForm) {
     this.service.putCartDetail().subscribe(
-      res => {
+      () => {
         this.resetForm(form);
         this.service.refreshCardDetails();
         this.toastr.info('Updated successfully', 'Card Detail Register')

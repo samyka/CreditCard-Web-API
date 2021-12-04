@@ -10,7 +10,8 @@ import { CardDetail } from './card-detail-form/shared/card-detail.model';
 export class CardDetailComponent implements OnInit {
 
 
-  constructor(public service: CardDetailService,
+  constructor(
+    public service: CardDetailService,
     private toastr: ToastrService) { }
 
   ngOnInit(): void {

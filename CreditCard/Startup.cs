@@ -62,9 +62,11 @@ namespace CreditCard
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
 
-           app.UseCors(o => o.WithOrigins("http://localhost:4200")
-           .AllowAnyMethod()
-           .AllowAnyHeader());
+            app.UseCors(o => o.WithOrigins("http://localhost:4300")
+            .AllowAnyMethod()
+            .SetIsOriginAllowed((host) => true)    
+            .AllowCredentials()
+            .AllowAnyHeader());
 
             if (env.IsDevelopment())
             {
@@ -109,6 +111,7 @@ namespace CreditCard
                 if (env.IsDevelopment())
                 {
                     spa.UseAngularCliServer(npmScript: "start");
+                    
                 }
             });
         }
