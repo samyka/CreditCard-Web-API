@@ -26,7 +26,7 @@ import { ToastrModule } from 'ngx-toastr';
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
-    ToastrModule,
+    ToastrModule.forRoot(),
     BrowserAnimationsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },

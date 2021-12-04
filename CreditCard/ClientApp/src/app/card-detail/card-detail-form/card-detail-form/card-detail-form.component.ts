@@ -6,8 +6,7 @@ import { NgForm } from '@angular/forms';
 
 @Component({
     selector: 'app-card-detail-form',
-    templateUrl: 'card-detail-form.component.html',
-    styleUrls: ['card-detail-form.component.scss']
+    templateUrl: 'card-detail-form.component.html'
 })
 export class CardDetailFormComponent implements OnInit{
 
