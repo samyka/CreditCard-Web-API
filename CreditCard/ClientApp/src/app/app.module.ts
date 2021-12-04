@@ -11,6 +11,7 @@ import { FetchDataComponent } from './fetch-data/fetch-data.component';
 import { CardDetailComponent } from './card-detail/card-detail.component';
 import { CardDetailFormComponent } from './card-detail/card-detail-form/card-detail-form/card-detail-form.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule.withServerTransition({ appId: 'ng-cli-universal' }),
     HttpClientModule,
     FormsModule,
+    ToastrModule,
     BrowserAnimationsModule,
     RouterModule.forRoot([
       { path: '', component: HomeComponent, pathMatch: 'full' },
